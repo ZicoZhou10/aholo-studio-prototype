@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { User, CreditCard, Key, Shield, Eye, EyeOff, Copy, Check } from 'lucide-react';
 import { StatCard } from '../components/ui/StatCard';
-import { useAppStore } from '../stores/appStore';
 import { formatNumber } from '../utils/formatters';
 
 type TabId = 'profile' | 'billing' | 'apikeys';

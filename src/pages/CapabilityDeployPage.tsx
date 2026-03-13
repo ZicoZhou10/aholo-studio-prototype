@@ -7,8 +7,6 @@ import {
   Code,
   ArrowRight,
   CheckCircle,
-  Loader2,
-  XCircle,
   Rocket,
   TestTube,
   Hammer,

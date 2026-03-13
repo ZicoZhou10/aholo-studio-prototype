@@ -24,7 +24,7 @@ interface BuildState {
   clearBuild: () => void;
 }
 
-export const useBuildStore = create<BuildState>((set, get) => ({
+export const useBuildStore = create<BuildState>((set, _get) => ({
   activeTab: 'preview',
   chatMessages: [],
   selectedCapabilities: [],

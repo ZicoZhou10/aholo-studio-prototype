@@ -10,7 +10,7 @@ import { TagList } from '../components/ui/TagList';
 import { useProjectStore } from '../stores/projectStore';
 import { useCapabilityStore } from '../stores/capabilityStore';
 import { getCategoryColor, getSourceColor } from '../utils/category-colors';
-import { formatLatency, formatNumber, formatTokenCost } from '../utils/formatters';
+import { formatLatency, formatTokenCost } from '../utils/formatters';
 
 const tabs = [
   { id: 'projects', label: '社区项目' },

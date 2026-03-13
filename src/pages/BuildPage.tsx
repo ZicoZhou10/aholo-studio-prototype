@@ -1,10 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Panel, Group as PanelGroup, Separator as PanelResizeHandle } from 'react-resizable-panels';
-import { ArrowLeft, Sparkles, Send, Code, Eye, GitBranch, Box, Loader2 } from 'lucide-react';
+import { ArrowLeft, Sparkles, Send, Code, Eye, GitBranch, Box } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { Tabs } from '../components/ui/Tabs';
-import { PromptInput } from '../components/ui/PromptInput';
 import { CapabilityChip } from '../components/ui/CapabilityChip';
 import { EmptyState } from '../components/ui/EmptyState';
 import { useBuildStore } from '../stores/buildStore';
@@ -106,7 +105,7 @@ export default function BuildPage() {
       </div>
 
       {/* ===== 3-Panel Layout ===== */}
-      <PanelGroup direction="horizontal" className="flex-1">
+      <PanelGroup orientation="horizontal" className="flex-1">
         {/* ----- Left Panel: Chat / AI Copilot ----- */}
         <Panel defaultSize={30} minSize={20}>
           <div className="flex flex-col h-full bg-surface">
